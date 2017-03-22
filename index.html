@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>New Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="dist/css/app.css">
+
+    <link rel="stylesheet" href="https://cdn.anychart.com/fonts/2.7.2/anychart.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo navbar-brand" href="/"> <img src="img/small_logo_white.png">
+                <h2>CAT AnyChart</h2> <h6>Testing system</h6>
+            </a>
+            <span class="main-cat"></span>
+        </div>
+        <div class="navbar-text">
+            <p>
+                Branch: <span id="branch-name">Lorem ipsum dolor sit amet.</span>
+            </p>
+        </div>
+    </div><!-- /.container -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            <div class="info-jumbotron">
+                <div class="info-block">
+                    <p class="info-success">Success: <span id="info-success"></span>;</p>
+                    <p class="info-failed">Failed: <span id="info-failed"></span>;</p>
+                    <p class="info-missing">Missing: <span id="info-missing"></span>;</p>
+                    <p class="info-total">Total: <span id="info-total"></span>;</p>
+                </div>
+
+                <div class="form-controls">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" id="group-by-error">Group by Error</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="search" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-bordered" id="table">
+                <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Test Name</th>
+                    <th>Reason</th>
+                    <th>Tags</th>
+                    <th>Download</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody class="table-result">
+
+                </tbody>
+            </table>
+
+            <div class="panel-group" style="display: none;" id="accordion">
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-3" id="sidebar">
+            <div class="list-group" id="process-sidebar">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- data(test) -->
+<script src="data.js"></script>
+<script src="src/js/app.js"></script>
+</body>
+</html>
